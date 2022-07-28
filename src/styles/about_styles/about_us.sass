@@ -1,0 +1,176 @@
+$text: #ffffff
+$mainBlue: #00cffd
+$btnHover: #008bfd
+$blueForText: #24CFFF
+$userHover: #7ce0ff
+
+.secondAppBody
+    background-image: url(/src/images/BG-NET.png)
+    background-size: cover
+    background-position: center center
+    width: 100%
+    height: auto
+    margin-top: clamp(128px,13.333333333333334vw,512px)
+
+.second-screen
+    width: 71.40625%
+    height: auto
+    margin: auto
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.about-project-header
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 500
+    user-select: none
+    font-size: clamp(24px,2.5vw,96px)
+    color: $text
+    margin-top: clamp(50px,5.208333333333333vw,300px)
+    text-transform: uppercase
+
+.separator-2
+    width: clamp(314px,26.770833333333332vw,714px)
+    background-color: $text
+    margin-top: clamp(16px,1.6666666666666667vw,64px)
+    height: 2px
+
+.about-us-paragraph
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 400
+    width: clamp(326.5px,34.010416666666664vw,1306px)
+    margin-top: clamp(16px,1.6666666666666667vw,64px)
+    font-size: clamp(32px,2.0833333333333335vw, 80px)
+    line-height: clamp(33px,2.7604166666666665vw,73px)
+    text-align: center
+    color: $text
+    text-transform: capitalize
+
+.blue-txt
+    color: $blueForText
+    text-decoration: underline
+    transition: 0.2s all
+    &:hover
+        color: $btnHover
+
+.read-more
+    width: clamp(175px,18.229166666666668vw,700px)
+    height: clamp(40px,3.8020833333333335vw, 80px)
+    background-color: transparent
+    margin-top: clamp(35px,2.8645833333333335vw, 75px)
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 400
+    border: 2px solid white
+    color: $text
+    font-size: clamp(19.5px,2.03125vw,78px)
+    transition: 0.3s all
+    &:hover
+        border: none
+        background-color: $mainBlue
+        box-shadow: 0px 4px 31px 5px rgba(0, 207, 253, 0.9)
+
+.cards-container
+    width: clamp(638px,70.72916666666667vw, 1538px)
+    height: clamp(240px,36.28601921024546vh,440px)
+    margin-top: clamp(64px,6.666666666666667vw,256px)
+    display: flex
+    justify-content: space-between
+
+.card-one, .card-two, .card-three
+    width: 27.61413843888071%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    transition: 0.3s all
+
+.card-one-header, .card-two-header, .card-three-header
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 400
+    font-size: clamp(20px,2.0833333333333335vw,80px)
+    text-align: center
+    text-transform: uppercase
+    color: $blueForText
+    user-select: none
+    margin-top: clamp(13px,1.1979166666666667vw,33px)
+
+.icon-1, .icon-2, .icon-3
+    margin-right: clamp(8px,0.7291666666666666vw, 24px)
+
+.separator-c-1, .separator-c-2, .separator-c-3
+    width: clamp( 114px,11.145833333333334vw, 314px)
+    height: 2px
+    background-color: $text
+    margin-top: clamp(5px, 1.4941302027748133vh, 24px)
+
+.card-one-text, .card-two-text, .card-three-text
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 400
+    width: 77.06666666666666%
+    height: auto
+    margin-top: clamp(7px,0.8854166666666666vw, 27px)
+    font-size: clamp(16.5px,1.71875vw,66px)
+    text-align: center
+    color: $text
+    text-transform: capitalize
+
+// Breakpoints
+
+@media screen and ( max-width:1280px  ) and (min-width: 1100px)
+
+    .separator-2
+        margin-top: 32px
+
+    .read-more
+        margin-top: 32px
+
+    .separator-c-1, .separator-c-2, .separator-c-3
+        margin-top: 16px
+
+    .about-us-paragraph
+        font-weight: 400
+        width: 59%
+        margin-top: 32px
+        font-size: 28px
+        line-height: 40px
+        border: 2px solid red
+
+    .card-one-text, .card-two-text, .card-three-text
+        font-size: 24px
+        margin-top: 16px
+
+    .card-two-text
+        width: 82%
+
+@media screen and ( max-width:1024px  ) and (min-width: 1px)
+    .about-us-paragraph
+        font-size: 24px
+        margin-top: 32px
+
+    .separator-2
+        margin-top: 32px
+
+    .separator-c-2, .separator-c-1, .separator-c-3
+        margin-top: 16px
+
+    .about-project-header
+        font-size: 29px
+
+    .read-more
+        margin-top: 32px
+
+    .card-one-header, .card-two-header, .card-three-header
+        font-size: 23px
+
+    .card-one-text, .card-two-text, .card-three-text
+        font-size: 21px
+        margin-top: 16px
+
+    .card-two-text
+        width: 90%

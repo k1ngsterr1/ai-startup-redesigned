@@ -1,0 +1,328 @@
+.ThirdAppBody {
+  background-image: url(/src/images/BG-NET.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+}
+
+.third-screen {
+  width: 71.40625%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-c-header {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: clamp(24px, 2.5vw, 96px);
+  color: #ffffff;
+  margin-top: clamp(64px, 6.6666666667vw, 256px);
+  text-transform: uppercase;
+}
+
+.separator-cr {
+  width: clamp(200px, 26.7708333333vw, 600px);
+  background-color: #ffffff;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  height: 2px;
+}
+
+.about-c-p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  width: 42%;
+  font-size: clamp(20px, 2.0833333333vw, 80px);
+  line-height: clamp(33px, 2.7604166667vw, 73px);
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: clamp(22.5px, 1.5625vw, 50px);
+  color: #FFFFFF;
+}
+
+.ruslan {
+  color: #24CFFF;
+  text-decoration: underline;
+  transition: 0.3s all;
+}
+.ruslan:hover {
+  color: #008bfd;
+}
+
+.social-networks {
+  width: 29.4801061008%;
+  height: 13.5802469136%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+
+.separator-cr-2 {
+  width: clamp(212px, 21.4583333333vw, 512px);
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+
+.contact-me-btn {
+  width: clamp(218px, 20.9375vw, 518px);
+  height: clamp(40px, 3.8020833333vw, 80px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(25px, 2.34375vw, 65px);
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  transition: 0.3s all;
+}
+.contact-me-btn:hover {
+  border: none;
+  background-color: #00cffd;
+  box-shadow: 0px 0px 14px rgba(0, 207, 253, 0.6);
+}
+
+.icon-sn-1, .icon-sn-2, .icon-sn-3 {
+  font-size: clamp(33px, 3.0375vw, 77px);
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s all;
+}
+
+.icon-sn-1:hover {
+  color: #d3d7ff;
+}
+
+.icon-sn-2:hover {
+  color: #d3d7ff;
+}
+
+.icon-sn-3:hover {
+  color: #d3d7ff;
+}
+
+.neuro-hand-in {
+  position: absolute;
+  width: clamp(500px, 58.3333333333vw, 1220px);
+  height: clamp(700px, 67.7083333333vw, 1400px);
+  left: clamp(400px, 40.5208333333vw, 900px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  top: clamp(1000px, 126.6145833333vw, 2631px);
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.neuro-hand {
+  position: absolute;
+  width: clamp(500px, 58.3333333333vw, 1220px);
+  height: clamp(700px, 67.7083333333vw, 1400px);
+  left: clamp(400px, 40.5208333333vw, 900px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  display: none;
+}
+
+.neuro-hand-out {
+  position: absolute;
+  width: clamp(500px, 58.3333333333vw, 1220px);
+  height: clamp(700px, 67.7083333333vw, 1400px);
+  left: clamp(400px, 40.5208333333vw, 900px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  top: clamp(1000px, 126.6145833333vw, 2631px);
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+}
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .neuro-hand-pic {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 410px;
+    top: 1680px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    display: none;
+  }
+  .neuro-hand-in {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 410px;
+    top: 1680px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .neuro-hand-out {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 410px;
+    top: 1680px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about-c-glass {
+    height: 330px !important;
+  }
+  .separator-cr-2 {
+    margin-top: 10px;
+  }
+  .contact-me-btn {
+    margin-top: 25px;
+  }
+  .neuro-hand-pic {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 295px;
+    top: 1560px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    display: none;
+  }
+  .neuro-hand-in {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 295px;
+    top: 1560px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .neuro-hand-out {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 295px;
+    top: 1560px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 1064px) {
+  .separator-cr, .separator-cr-2 {
+    margin-top: 32px;
+  }
+  .about-c-p {
+    margin-top: 32px;
+    font-size: 28px;
+  }
+  .social-networks {
+    margin-top: 32px;
+  }
+  #contact-me-btn {
+    margin-top: 32px;
+  }
+}/*# sourceMappingURL=aboutC.css.map */
