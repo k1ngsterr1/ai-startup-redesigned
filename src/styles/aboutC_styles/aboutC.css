@@ -200,118 +200,13 @@
     transform: translateX(100%);
   }
 }
-@media screen and (max-width: 1024px) {
-  .neuro-hand-pic {
-    position: absolute;
-    width: clamp(500px, 58.3333333333vw, 1220px);
-    height: clamp(700px, 67.7083333333vw, 1400px);
-    left: 410px;
-    top: 1680px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    display: none;
-  }
-  .neuro-hand-in {
-    position: absolute;
-    width: clamp(500px, 58.3333333333vw, 1220px);
-    height: clamp(700px, 67.7083333333vw, 1400px);
-    left: 410px;
-    top: 1680px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  .neuro-hand-out {
-    position: absolute;
-    width: clamp(500px, 58.3333333333vw, 1220px);
-    height: clamp(700px, 67.7083333333vw, 1400px);
-    left: 410px;
-    top: 1680px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    -webkit-animation-name: slideOutRight;
-    animation-name: slideOutRight;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+@media screen and (max-width: 1366px) and (min-width: 1280px) {
+  .about-c-p {
+    width: 52%;
+    font-size: 32px;
   }
 }
-@media screen and (max-width: 780px) {
-  .about-c-glass {
-    height: 330px !important;
-  }
-  .separator-cr-2 {
-    margin-top: 10px;
-  }
-  .contact-me-btn {
-    margin-top: 25px;
-  }
-  .neuro-hand-pic {
-    position: absolute;
-    width: clamp(500px, 58.3333333333vw, 1220px);
-    height: clamp(700px, 67.7083333333vw, 1400px);
-    left: 295px;
-    top: 1560px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    display: none;
-  }
-  .neuro-hand-in {
-    position: absolute;
-    width: clamp(500px, 58.3333333333vw, 1220px);
-    height: clamp(700px, 67.7083333333vw, 1400px);
-    left: 295px;
-    top: 1560px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  .neuro-hand-out {
-    position: absolute;
-    width: clamp(500px, 58.3333333333vw, 1220px);
-    height: clamp(700px, 67.7083333333vw, 1400px);
-    left: 295px;
-    top: 1560px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    -webkit-animation-name: slideOutRight;
-    animation-name: slideOutRight;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-}
-@media screen and (max-width: 1280px) and (min-width: 1064px) {
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
   .separator-cr, .separator-cr-2 {
     margin-top: 32px;
   }
@@ -324,5 +219,14 @@
   }
   #contact-me-btn {
     margin-top: 32px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .about-c-p {
+    width: 50%;
+    font-size: 24px;
+  }
+  .about-c-header {
+    font-size: 29px;
   }
 }/*# sourceMappingURL=aboutC.css.map */

@@ -185,8 +185,6 @@ $userHover: #7ce0ff
 
 // Media Breakpointss
 
-@media screen and ( max-width:1024px )
-
     .neuro-hand-pic
         position: absolute
         width: clamp(500px,58.333333333333336vw, 1220px)
@@ -227,7 +225,6 @@ $userHover: #7ce0ff
         -webkit-animation-fill-mode: both
         animation-fill-mode: both
 
-@media screen and ( max-width:780px  )
     .about-c-glass
         height: 330px !important
 
@@ -277,7 +274,12 @@ $userHover: #7ce0ff
         -webkit-animation-fill-mode: both
         animation-fill-mode: both
 
-@media screen and ( max-width:1280px  ) and (min-width: 1064px)
+@media screen and ( max-width:1366px  ) and (min-width: 1280px)
+    .about-c-p
+        width: 52%
+        font-size: 32px
+
+@media screen and ( max-width:1280px  ) and (min-width: 1024px)
 
     .separator-cr, .separator-cr-2
         margin-top: 32px
@@ -291,3 +293,11 @@ $userHover: #7ce0ff
 
     #contact-me-btn
         margin-top: 32px
+
+@media screen and ( max-width:1024px  ) and (min-width: 768px)
+    .about-c-p
+        width: 50%
+        font-size: 24px
+
+    .about-c-header
+        font-size: 29px

@@ -295,4 +295,27 @@ body {
   100% {
     transform: scale3d(1, 1, 1);
   }
+}
+
+@media screen and (max-width: 768px) and (min-width: 414px) {
+  .buttons {
+    width: 66% !important;
+  }
+  .start-btn {
+    width: 170px !important;
+    height: 35px !important;
+  }
+  .demo {
+    width: 170px !important;
+    height: 35px !important;
+  }
+  .separator {
+    width: 340px !important;
+  }
+  .brain-picture {
+    width: 265px !important;
+    height: 265px !important;
+    left: 63.4270833333vw !important;
+    top: 17vw !important;
+  }
 }/*# sourceMappingURL=main-styles.css.map */

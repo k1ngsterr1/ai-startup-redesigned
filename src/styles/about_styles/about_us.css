@@ -135,6 +135,28 @@
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 2048px) and (min-width: 1920px) {
+  .about-us-paragraph {
+    border: 10px solid green;
+  }
+}
+@media screen and (max-width: 1536px) and (min-width: 1366px) {
+  .about-us-paragraph {
+    border: 2px solid pink;
+  }
+}
+@media screen and (max-width: 1366px) and (min-width: 1280px) {
+  .separator-c-2, .separator-c-1, .separator-c-3 {
+    margin-top: 16px;
+  }
+  .about-us-paragraph {
+    border: 2px solid yellow;
+  }
+  .card-one-text, .card-two-text, .card-three-text {
+    font-size: 24px;
+    margin-top: 16px;
+  }
+}
 @media screen and (max-width: 1280px) and (min-width: 1100px) {
   .separator-2 {
     margin-top: 32px;
@@ -161,7 +183,7 @@
     width: 82%;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 1px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .about-us-paragraph {
     font-size: 24px;
     margin-top: 32px;
@@ -187,5 +209,13 @@
   }
   .card-two-text {
     width: 90%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 448px) {
+  .about-us-paragraph {
+    width: 80%;
+  }
+  .card-one-text {
+    width: 80% !important;
   }
 }/*# sourceMappingURL=about_us.css.map */
