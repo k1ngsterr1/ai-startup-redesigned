@@ -143,6 +143,9 @@ body
         &:hover
             color: $btnHover
 
+    .robot-picture
+        display: none
+
     .separator
         width: 58.041666666666664%
         height: 2px
@@ -227,6 +230,11 @@ body
         user-select: none
         pointer-events: none
 
+    .about-p-offer
+        display: none
+
+    .logo-square
+        display: none
     // Animations
 
     .main-header, .offer-p, .separator, .quote-container, .buttons, .navigation
@@ -297,7 +305,7 @@ body
 
 // MEDIA
 
-@media screen and ( max-width:768px ) and (min-width: 414px)
+@media screen and ( max-width:768px ) and (min-width: 428px)
     .buttons
         width: 66% !important
 
@@ -317,3 +325,108 @@ body
         height: 265px !important
         left: 63.427083333333336vw !important
         top: 17vw !important
+
+@media screen and ( max-width:428px ) and (min-width: 100px)
+    .app
+        width: 91.2%
+        height: auto
+        margin: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .home, .about-project, .about-creator, .faq, .support
+        display: none
+
+    .navigation
+        width: 100%
+
+    .logo-square
+        display: flex !important
+        justify-content: center
+        align-items: center
+        border: 2px solid white
+        width: 44px
+        font-size: 26px
+        height: 44px
+
+    .sign-up
+        display: none !important
+
+    .hamburger
+        width: 37px
+        height: 27px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    .h-line-1
+        width: 100%
+        height: 3px
+        background-color: #fff
+
+    .h-line-2
+        width: 100%
+        height: 3px
+        background-color: #fff
+
+    .h-line-3
+        width: 100%
+        height: 3px
+        background-color: #fff
+
+    .ai
+        display: none
+
+    .square
+        display: none !important
+
+    .main-header
+        display: none !important
+
+    .offer-p
+        width: 309px !important
+        font-family: 'Roboto Condensed' !important
+        font-style: normal !important
+        font-weight: bolder !important
+        font-size: 35px !important
+        color: #FFFFFF
+
+    .brain-picture
+        display: none !important
+
+    .about-p-offer
+        width: 280px
+        margin-top: 32px
+        font-family: 'Roboto Condensed'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 25px
+        text-transform: capitalize
+        color: rgba(223, 234, 255, 0.9)
+
+    .separator
+        width: 217px !important
+        height: 2px !important
+
+    .buttons
+        display: flex !important
+        flex-direction: column !important
+        width: 217px !important
+        height: 130px !important
+        align-items: start !important
+
+    .start-btn
+        width: 217px !important
+        height: 48px !important
+        font-size: 27px !important
+
+    .demo
+        width: 217px !important
+        height: 48px !important
+        font-size: 27px !important
+
+    .robot-picture
+        display: block !important
+        margin-top: 128px !important

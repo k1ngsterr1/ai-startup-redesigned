@@ -80,8 +80,6 @@
 }
 
 .cards-container {
-  width: clamp(638px, 70.7291666667vw, 1538px);
-  height: clamp(240px, 36.2860192102vh, 440px);
   margin-top: clamp(64px, 6.6666666667vw, 256px);
   display: flex;
   justify-content: space-between;
@@ -135,22 +133,9 @@
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 2048px) and (min-width: 1920px) {
-  .about-us-paragraph {
-    border: 10px solid green;
-  }
-}
-@media screen and (max-width: 1536px) and (min-width: 1366px) {
-  .about-us-paragraph {
-    border: 2px solid pink;
-  }
-}
 @media screen and (max-width: 1366px) and (min-width: 1280px) {
   .separator-c-2, .separator-c-1, .separator-c-3 {
     margin-top: 16px;
-  }
-  .about-us-paragraph {
-    border: 2px solid yellow;
   }
   .card-one-text, .card-two-text, .card-three-text {
     font-size: 24px;
@@ -173,7 +158,6 @@
     margin-top: 32px;
     font-size: 28px;
     line-height: 40px;
-    border: 2px solid red;
   }
   .card-one-text, .card-two-text, .card-three-text {
     font-size: 24px;
@@ -211,11 +195,130 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 448px) {
+@media screen and (max-width: 889px) and (min-width: 768px) {
+  .second-screen {
+    margin-top: 64px;
+  }
+  .read-more {
+    font-size: 23px;
+  }
+  .about-us-paragraph {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 428px) {
   .about-us-paragraph {
     width: 80%;
   }
   .card-one-text {
-    width: 80% !important;
+    width: 90% !important;
+  }
+  .reade-more {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 428px) and (min-width: 100px) {
+  .about-us-paragraph, .about-project-header, .separator-2, .read-more {
+    display: none;
+  }
+  .card-one, .card-two, .card-three {
+    width: auto;
+  }
+  .card-three {
+    margin-top: 32px;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly !important;
+    height: 900px;
+  }
+  .card-one-header {
+    width: 139px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #24CFFF;
+  }
+  .separator-c-1 {
+    width: 185px;
+    height: 2px;
+    margin-top: 16px;
+  }
+  .card-one-text {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    width: 190px;
+    height: 150px;
+    margin-top: 16px;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  .card-two-header {
+    width: 145px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #24CFFF;
+  }
+  .separator-c-2 {
+    width: 185px;
+    height: 2px;
+    margin-top: 16px;
+  }
+  .card-two-text {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    width: 190px;
+    height: 150px;
+    margin-top: 16px;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  .card-three-header {
+    width: 145px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #24CFFF;
+  }
+  .separator-c-3 {
+    width: 185px;
+    height: 2px;
+    margin-top: 16px;
+  }
+  .card-three-text {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    width: 190px;
+    height: 150px;
+    margin-top: 16px;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=about_us.css.map */
