@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import SecondApp from "./apps/SecondApp";
 import ThirdApp from "./apps/ThirdApp";
+import FourthApp from "./apps/FourthApp";
 
 // Styles
 import "./styles/main_styles/main-styles.css";
@@ -15,5 +16,6 @@ root.render(
     <App />
     <SecondApp />
     <ThirdApp />
+    <FourthApp />
   </React.StrictMode>
 );

@@ -99,6 +99,9 @@ body {
   height: auto;
   margin-top: clamp(64px, 6.6666666667vw, 256px);
 }
+.app .hamburger {
+  display: none;
+}
 .app .square {
   width: 8.1770833333vw;
   height: 8.1770833333vw;
@@ -306,7 +309,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 428px) {
+@media screen and (max-width: 768px) and (min-width: 432px) {
   .buttons {
     width: 66% !important;
   }
@@ -328,7 +331,7 @@ body {
     top: 17vw !important;
   }
 }
-@media screen and (max-width: 428px) and (min-width: 100px) {
+@media screen and (max-width: 432px) and (min-width: 100px) {
   .app {
     width: 91.2%;
     height: auto;
@@ -356,11 +359,11 @@ body {
     display: none !important;
   }
   .hamburger {
-    width: 37px;
-    height: 27px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 37px !important;
+    height: 27px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
   }
   .h-line-1 {
     width: 100%;

@@ -1,2 +1,386 @@
+$text: #ffffff
+$mainBlue: #00cffd
+$btnHover: #008bfd
+$blueForText: #24CFFF
+$userHover: #7ce0ff
+
 .FourthAppBody
-    background-color: yellow
+    background-color: white
+    width: 100%
+    height: 625px
+    display: flex
+    align-items: center
+    margin-top: clamp(100px, 7.8125vw, 200px)
+    // -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0)
+    // box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0)
+    box-shadow: inset 0px 0px 38px rgba(0, 0, 0, 0.5)
+
+    .fourth-screen
+        width: 71.40625%
+        height: 100%
+        margin: auto
+        position: relative
+        margin-top: 20px
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    .robot-moderator
+        font-family: 'Roboto Condensed'
+        font-style: italic
+        font-weight: 400
+        font-size: clamp(20px,2.0833333333333335vw, 80px)
+        line-height: clamp(23.5px ,2.4479166666666665vw, 94px)
+        color: #000000
+
+    .full-robot-container
+        width: clamp(250px,26.041666666666668vw, 1000px)
+        height: clamp(250px,26.041666666666668vw, 1000px)
+        border: 2px solid yellow
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .Johnny
+        z-index: 1
+        user-select: none
+        pointer-events: none
+        -webkit-animation: mover 1.5s infinite alternate
+        animation: mover 1.5s infinite alternate
+
+    .Johnny
+        -webkit-animation: mover 1.5s infinite
+
+    .JohnnyShadow
+        position: absolute
+        z-index: 0
+        left: 90px
+        top: 35px
+        user-select: none
+        pointer-events: none
+
+    .HoverThing
+        user-select: none
+        pointer-events: none
+
+    .HoverThingLight
+        position: absolute
+        z-index: 2
+        left: -10px
+        top: 130px
+        user-select: none
+        pointer-events: none
+
+    .robot-name
+        position: relative
+        z-index: 4
+        font-size: 30px
+        width: 254px
+        height: 59px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: transparent
+        border: 3px solid black
+        border-radius: 69px
+
+    // FAQ TABLE
+
+    .faq-separator
+        display: none
+        width: clamp(314px,26.770833333333332vw,714px)
+        background-color: $text
+        margin-top: clamp(16px,1.6666666666666667vw,64px)
+        height: 2px
+
+    .FAQ-header
+        font-family: 'Roboto Condensed'
+        font-style: normal
+        font-weight: 500
+        user-select: none
+        font-size: clamp(24px,2.5vw,96px)
+        color: $text
+        margin-top: clamp(64px,6.666666666666667vw, 256px)
+        text-transform: uppercase
+
+    .FAQ-table
+        margin-top: 32px
+        width: 26.666666666666668vw
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+
+    .for-question-1, .for-question-2, .for-question-3, .for-question-4, .for-question-5, .for-question-6
+        width: 100%
+        display: flex
+        font-family: 'Roboto Condensed'
+        align-items: center
+        text-transform: capitalize
+        font-style: normal
+        margin-top: 16px
+        font-weight: 400
+        font-size: clamp( 21px,1.6145833333333333vw, 41px)
+        justify-content: center
+        border: 3px solid $blueForText
+        height: clamp(33.5px ,3.4895833333333335vw, 134px)
+        transition: 0.3s all
+        &:hover
+            box-shadow: (0px 4px 11px rgba(0, 155, 189, 0.3))
+            background-color: $blueForText
+            color: $text
+
+@-webkit-keyframes mover
+ 0% 
+    transform: translateY(0)
+
+ 50%  
+    transform: translateY(-5px)
+
+ 100%  
+    transform: translateY(-10px)
+
+@keyframes mover
+    0%
+        transform: translateY(-10px)
+
+    50%
+        transform: translateY(-5px)
+
+    100%
+        transform: translateY(-10px)
+
+// MEDIA QUERIES 
+@media screen and ( max-width:1600px ) and (min-width: 1280px)
+
+    .FourthAppBody
+        background-image: url(/src/images/BG-NET.png) !important
+        background-color: transparent !important
+        background-size: cover !important
+        background-position: center center !important
+        width: 100% !important
+        height: auto !important
+        -webkit-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0), 5px 5px 15px 5px rgba(0,0,0,0)
+        box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0)
+
+    .faq-separator
+        display: block !important
+
+    .FAQ-table
+        color: white !important
+
+    .fourth-screen
+        width: 71.40625% !important
+        height: 100% !important
+        margin: auto !important
+        position: relative !important
+        margin-top: 20px !important
+        flex-direction: column !important
+        display: flex !important
+        align-items: center !important
+        justify-content: center !important
+
+    .full-robot-container
+        display: none !important
+
+    .Johnny
+        display: none !important
+
+    .JohnnyShadow
+        display: none !important
+
+    .HoverThingLight
+
+        display: none !important
+
+    .robot-name
+        display: none !important
+
+    .for-question-1, .for-question-2, .for-question-3, .for-question-4, .for-question-5, .for-question-6
+        border: 3px solid white !important
+
+        &:hover
+            box-shadow: (0px 4px 11px rgba(0, 155, 189, 0.3))
+            background-color: $blueForText
+            border: 3px solid $blueForText !important
+            color: $text
+
+@media screen and ( max-width:1024px ) and (min-width: 432px)
+
+    .FourthAppBody
+        background-image: url(/src/images/BG-NET.png) !important
+        background-color: transparent !important
+        background-size: cover !important
+        background-position: center center !important
+        width: 100% !important
+        height: auto !important
+        -webkit-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0), 5px 5px 15px 5px rgba(0,0,0,0)
+        box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0)
+
+    .FAQ-table
+        color: white !important
+        width: 360px !important
+
+    .faq-separator
+        display: block !important
+
+    .fourth-screen
+        width: 71.40625% !important
+        height: 100% !important
+        margin: auto !important
+        position: relative !important
+        margin-top: 20px !important
+        flex-direction: column !important
+        display: flex !important
+        align-items: center !important
+        justify-content: center !important
+
+    .full-robot-container
+        display: none !important
+
+    .Johnny
+        display: none !important
+
+    .JohnnyShadow
+        display: none !important
+
+    .HoverThingLight
+
+        display: none !important
+
+    .robot-name
+        display: none !important
+
+    .for-question-1, .for-question-2, .for-question-3, .for-question-4, .for-question-5, .for-question-6
+        border: 3px solid white !important
+
+        &:hover
+            box-shadow: (0px 4px 11px rgba(0, 155, 189, 0.3))
+            background-color: $blueForText
+            border: 3px solid $blueForText !important
+            color: $text
+
+    .for-question-1, .for-question-2, .for-question-3, .for-question-4, .for-question-5, .for-question-6
+        width: 100% !important
+        height: 50px !important
+        font-size: 23px !important
+        text-align: center !important
+        width: 100% !important
+
+@media screen and ( max-width:432px ) and (min-width: 360px)
+    .FourthAppBody
+        background-image: url(/src/images/BG-NET.png) !important
+        background-color: transparent !important
+        background-size: cover !important
+        background-position: center center !important
+        width: 100% !important
+        height: auto !important
+        -webkit-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0), 5px 5px 15px 5px rgba(0,0,0,0)
+        box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0)
+
+    .faq-separator
+        display: block !important
+        width: 200px !important
+
+    .FAQ-table
+        width: 320px !important
+        color: white !important
+
+    .fourth-screen
+        width: 71.40625% !important
+        height: 100% !important
+        margin: auto !important
+        position: relative !important
+        margin-top: 20px !important
+        flex-direction: column !important
+        display: flex !important
+        align-items: center !important
+        justify-content: center !important
+
+    .full-robot-container
+        display: none !important
+
+    .Johnny
+        display: none !important
+
+    .JohnnyShadow
+        display: none !important
+
+    .HoverThingLight
+
+        display: none !important
+
+    .robot-name
+        display: none !important
+
+    .for-question-1, .for-question-2, .for-question-3, .for-question-4, .for-question-5, .for-question-6
+        width: 100% !important
+        height: 50px !important
+        font-size: 21px !important
+        border: 3px solid white !important
+        text-align: center !important
+        width: 100% !important
+        &:hover
+            box-shadow: (0px 4px 11px rgba(0, 155, 189, 0.3))
+            background-color: $blueForText
+            border: 3px solid $blueForText !important
+            color: $text
+
+    .FAQ-header
+        font-size: 30px !important
+
+@media screen and ( max-width: 360px) and (min-width: 100px)
+    .FourthAppBody
+        background-image: url(/src/images/BG-NET.png) !important
+        background-color: transparent !important
+        background-size: cover !important
+        background-position: center center !important
+        width: 100% !important
+        height: auto !important
+        -webkit-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0), 5px 5px 15px 5px rgba(0,0,0,0)
+        box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0), inset 4px 4px 15px 0px rgb(0, 0, 0, 0)
+
+    .faq-separator
+        display: block !important
+        width: 200px !important
+
+    .FAQ-table
+        width: 320px !important
+        color: white !important
+
+    .fourth-screen
+        width: 71.40625% !important
+        height: 100% !important
+        margin: auto !important
+        position: relative !important
+        margin-top: 20px !important
+        flex-direction: column !important
+        display: flex !important
+        align-items: center !important
+        justify-content: center !important
+
+    .full-robot-container
+        display: none !important
+
+    .Johnny
+        display: none !important
+
+    .JohnnyShadow
+        display: none !important
+
+    .HoverThingLight
+
+        display: none !important
+
+    .robot-name
+        display: none !important
+
+    .for-question-1, .for-question-2, .for-question-3, .for-question-4, .for-question-5, .for-question-6
+        width: 100% !important
+        height: 50px !important
+        font-size: 21px !important
+        text-align: center !important
+        width: 100% !important
+
+    .FAQ-header
+        font-size: 30px !important
